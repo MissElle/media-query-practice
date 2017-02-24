@@ -1,0 +1,37 @@
+nav, footer, video {display: none;}
+
+/*
+a:after {
+  content: " ("attr(href)")";
+  font-size: 80%;
+}
+*/
+
+a[href^="http://"]:after, a[href^="https://"]:after {
+content: " (" attr(href) ")";
+}
+a[href^="#"]:after {
+content: "";
+}
+
+.container, article {
+  width: 100%;
+}
+
+figure {
+  float: left;
+  padding: 1rem;
+}
+
+img {
+  width: 100%;
+}
+
+figcaption {
+  display: none;
+}
+
+article {
+  position: relative; 
+  top: -5rem;
+}
