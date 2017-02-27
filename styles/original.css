@@ -47,7 +47,7 @@ nav {
 
 nav ul {
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
   justify-content: space-between;
   margin: 0;
   padding: 0;
@@ -64,6 +64,20 @@ nav li {
 
 nav li.active {
   background-color: rgba(102, 196, 58, 0.4);
+}
+
+@media all and (max-width: 615px) {
+  nav ul{
+    flex-flow: row wrap;
+  }
+  
+  nav li {
+    padding: .5 rem;
+    font-size: 75%;
+    max-width: 24.8%;
+  }
+
+  
 }
 
 article {
